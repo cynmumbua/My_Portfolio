@@ -53,7 +53,8 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh-60px);
+  min-height: 90vh;
+  // min-height: calc(100vh-60px);
 
   .icons {
     margin-top: 1rem;
@@ -126,12 +127,38 @@ main {
     }
   }
 }
+//contact page
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+
+  div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    @include easeOut;
+
+    &:hover {
+      padding: 0.5rem 1.5rem;
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+      span {
+        color: set-text-color($secondary-color);
+      }
+    }
+  }
+}
 //button styles
 .btn {
   display: block;
   padding: 0.5em 1rem;
   border: 0;
   margin-bottom: 0.3rem;
+  // border-radius: 30%;
   &:hover {
     background: $secondary-color;
     color: set-text-color($secondary-color);
