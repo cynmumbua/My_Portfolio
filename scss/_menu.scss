@@ -38,7 +38,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.97;
   visibility: hidden;
 
   &.show {
@@ -58,9 +58,9 @@
   }
   //slide from the top
   &-nav {
+    background: $primary-color;
     margin: 0;
     padding: 0;
-    background: darken($color: $primary-color, $amount: 5);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -71,7 +71,7 @@
   }
   //branding side slide from the bottom
   &-branding {
-    background: $primary-color;
+    background: darken($color: $primary-color, $amount: 5);
     transform: translate3d(0, 100%, 0);
     @include easeOut;
 
@@ -88,9 +88,9 @@
     }
   }
 
-  // navigation items slide from the top
+  // navigation items slide from the
   .nav-item {
-    transform: translate3d(50px, 0, 0);
+    transform: translate3d(600px, 0, 0);
     @include easeOut;
 
     &.show {
