@@ -104,6 +104,12 @@ main {
   }
   .job-3 {
     grid-area: job3;
+    a {
+      &:hover {
+        color: $secondary-color;
+        @include easeOut();
+      }
+    }
   }
   .job {
     background: lighten($color: $primary-color, $amount: 5);
